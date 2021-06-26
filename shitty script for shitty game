@@ -1,0 +1,7 @@
+local codes = {"FIRSTCODE", "20KADGIFT", "TYFOR30K"}
+local Redeem = game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction
+
+for _, event in pairs(codes) do
+    wait(0.5)
+    Redeem:InvokeServer("RedeemPromoCode", event)
+    end
